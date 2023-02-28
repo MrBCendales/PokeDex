@@ -1,14 +1,22 @@
 const express = require("express");
 const axios = require("axios");
 const app = express();
+const cors = require("cors");
+const pool = require("../knexfile");
 
 app.use(express.json());
+app.use(cors());
 //PORT
 const PORT = 8080;
-const pokemonList = [];
 
-app.get("/", async (req, res) => {
-  /*for (let i = 100; i <= 151; i++) {
+const pokeControler = require("./pokeModels/poke.controler");
+
+app.get("/poke/:id", pokeControler.getBasicInfo);
+app.get("/specialpoke/:id", pokeControler.getSpecialInfo);
+
+/*app.get("/", async (req, res) => {
+  const pokemonList = [];
+  for (let i = 100; i <= 151; i++) {
     const pokemonInfo = {};
     const data = await axios.get(
       `https://pokeapi.co/api/v2/pokemon-species/${i}`
@@ -33,10 +41,9 @@ app.get("/", async (req, res) => {
 
     pokemonList.push(pokemonInfo);
   }
-  */
-  console.log("Hello! ");
-
+  
   res.status(200).send(pokemonList);
 });
+*/
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
