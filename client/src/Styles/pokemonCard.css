@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+h1,
+h2 {
+  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
+}
+
+.pokemonCard {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  height: 600px;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  border-style: outset solid;
+  border-width: 5px;
+  border-color: gray;
+}
+
+.topChart {
+  display: flex;
+}
+.leftTopChart {
+  width: 300px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.rightTopChart {
+  width: 250px;
+}
+.bottomChart {
+  border-top-style: dashed;
+}

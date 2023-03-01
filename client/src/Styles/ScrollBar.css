@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.scrollbarList .pokeRow {
+  width: 300px;
+  height: 50px;
+  border: 3px solid black;
+  list-style-type: none;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
+  background-color: white;
+}
+.scrollbarList .pokeRow:hover {
+  cursor: pointer;
+}
+
+.pokeRow .scrollId {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+.pokeRow .scrollName {
+  flex: 80%;
+}

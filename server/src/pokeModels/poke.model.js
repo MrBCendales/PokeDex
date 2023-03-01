@@ -11,6 +11,7 @@ module.exports = {
         id: "id",
         pokemon_name: "pokemon_name",
         description: "description",
+        type1: "type1",
         height: "height",
         weight: "weight",
         sprite: "sprite",

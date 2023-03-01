@@ -14,16 +14,16 @@ const pokeControler = require("./pokeModels/poke.controler");
 app.get("/poke/:id", pokeControler.getBasicInfo);
 app.get("/specialpoke/:id", pokeControler.getSpecialInfo);
 
-/*app.get("/", async (req, res) => {
+app.get("/", async (req, res) => {
   const pokemonList = [];
-  for (let i = 100; i <= 151; i++) {
+  for (let i = 1; i <= 151; i++) {
     const pokemonInfo = {};
     const data = await axios.get(
       `https://pokeapi.co/api/v2/pokemon-species/${i}`
     );
     pokemonInfo["id"] = data.data.id;
     pokemonInfo["name"] = data.data.name;
-
+    /*
     let descData = data.data.flavor_text_entries[11].flavor_text;
     pokemonInfo["description"] = descData.replace(/(\r\n|\n|\r)/gm, " ");
 
@@ -38,12 +38,11 @@ app.get("/specialpoke/:id", pokeControler.getSpecialInfo);
       data2.data.sprites.other["official-artwork"].front_default;
     pokemonInfo["spriteShiny"] =
       data2.data.sprites.other["official-artwork"].front_shiny;
-
+    */
     pokemonList.push(pokemonInfo);
   }
-  
+
   res.status(200).send(pokemonList);
 });
-*/
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
