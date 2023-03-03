@@ -10,7 +10,7 @@ function FirstPage() {
         style={{ textDecoration: "none" }}
         state={"From FirstPage"}
       >
-        <h1>PRESS START</h1>
+        <h1 className="mainTitle">PRESS START</h1>
       </Link>
     </div>
   );

@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .firstPage {
   margin: 0;
-  font-style: none;
-  background-color: bisque;
+  background-image: url("https://i.ibb.co/GJbHyzF/1855534.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
-h1 {
+.mainTitle {
   text-decoration: none;
   color: black;
-  margin-left: 500px;
+  position: fixed;
+  bottom: 50%;
+  left: 40vw;
 }

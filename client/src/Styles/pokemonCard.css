@@ -3,11 +3,16 @@ h1,
 h2 {
   font-family: "Press Start 2P", Arial Black, Arial Bold, Arial, sans-serif;
 }
+h1 {
+  margin-left: 0px;
+}
 
 .pokemonCard {
+  margin-top: 40px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
-  width: 680px;
+  width: 700px;
   height: 600px;
   text-align: center;
   justify-content: center;
@@ -18,16 +23,21 @@ h2 {
 }
 
 .topChart {
+  padding: 1px;
   display: flex;
+  width: 100%;
 }
 .leftTopChart {
+  padding: 1px;
   width: 300px;
-  display: block;
-  align-items: center;
-  justify-content: center;
 }
 .rightTopChart {
-  width: 250px;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .bottomChart {
   border-top-style: dashed;

@@ -5,7 +5,7 @@ import { ScrollBarData } from "./ScrollBarData";
 
 function ScrollBar({ setPokeId }) {
   return (
-    <div>
+    <div className="scrollbar">
       <Scrollbars style={{ width: 400, height: 680 }}>
         <ul className="scrollbarList">
           {ScrollBarData.map((value, key) => {

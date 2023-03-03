@@ -17,17 +17,25 @@ function PokemonCard({ pokeId, pokemonInfo, setPokemonInfo }) {
       <div className="topChart">
         <div className="leftTopChart">
           {pokemonInfo ? (
-            <img src={pokemonInfo.sprite} width="300" alt="pokemon" />
+            <>
+              <img src={pokemonInfo.sprite} width="300px" alt="pokemon" />
+              <h2>No.{pokemonInfo.id}</h2>
+            </>
           ) : (
-            ""
+            " "
           )}
-          {pokemonInfo ? <h1>No.{pokemonInfo.id}</h1> : ""}
         </div>
         <div className="rightTopChart">
-          {pokemonInfo ? <h1>{pokemonInfo.pokemon_name}</h1> : ""}
-          {pokemonInfo ? <h1>{pokemonInfo.type1}</h1> : ""}
-          {pokemonInfo ? <h2>HT {pokemonInfo.height / 10} m </h2> : ""}
-          {pokemonInfo ? <h2>WT {pokemonInfo.weight / 10} lb </h2> : ""}
+          {pokemonInfo ? (
+            <>
+              <h1>{pokemonInfo.pokemon_name}</h1>
+              <h2>{pokemonInfo.type1}</h2>
+              <h2>HT {pokemonInfo.height / 10} m </h2>
+              <h2>WT {pokemonInfo.weight / 10} lb </h2>
+            </>
+          ) : (
+            " Choose your Pokemon!"
+          )}
         </div>
       </div>
       <div className="bottomChart">
