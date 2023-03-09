@@ -1,9 +1,9 @@
 import React from "react";
 import { Scrollbars } from "react-custom-scrollbars-2";
-import "../Styles/ScrollBar.css";
-import { ScrollBarData } from "./ScrollBarData";
+import "../../Styles/ScrollBar.css";
 
-function ScrollBar({ setPokeId }) {
+function FavPokemonScrollbar({ setFavPokeId }) {
+  const ScrollBarData = {};
   return (
     <div className="scrollbar">
       <Scrollbars
@@ -17,7 +17,7 @@ function ScrollBar({ setPokeId }) {
                 key={key}
                 className="pokeRow pixel-borders pixel-borders--custom"
                 id={window.location.pathname === value.link ? "active" : ""}
-                onClick={() => setPokeId(value.id)}
+                onClick={() => setFavPokeId(value.id)}
               >
                 <div className="scrollId">{value.id}</div>
                 <div className="scrollName">{value.name}</div>
@@ -30,4 +30,4 @@ function ScrollBar({ setPokeId }) {
   );
 }
 
-export default ScrollBar;
+export default FavPokemonScrollbar;

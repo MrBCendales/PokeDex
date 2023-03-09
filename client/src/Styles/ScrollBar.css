@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+.scrollbarGeneral {
+  margin-top: 50px;
+}
 .scrollbarList .pokeRow {
-  width: 300px;
+  width: 98%;
   height: 50px;
   border: 3px solid black;
   list-style-type: none;
@@ -24,4 +27,6 @@
 }
 .pokeRow .scrollName {
   flex: 80%;
+  display: grid;
+  place-items: center;
 }

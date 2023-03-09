@@ -7,9 +7,13 @@ h1 {
   margin-left: 0px;
 }
 
+.toUpper {
+  text-transform: uppercase;
+}
+
 .pokemonCard {
-  margin-top: 40px;
-  margin-left: 50px;
+  margin-top: 50px;
+  margin-left: 0px;
   display: flex;
   flex-direction: column;
   width: 700px;

@@ -24,6 +24,7 @@ app.get("/specialpoke/:id", pokeControler.getSpecialInfo);
     pokemonInfo["name"] = data.data.name;
     
     let descData = data.data.flavor_text_entries[11].flavor_text;
+    
     pokemonInfo["description"] = descData.replace(/(\r\n|\n|\r)/gm, " ");
 
     const data2 = await axios.get(`https://pokeapi.co/api/v2/pokemon/${i}`);

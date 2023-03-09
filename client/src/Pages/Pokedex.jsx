@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import axios from "axios";
 import Sidebar from "../Components/Sidebar";
 import ScrollBar from "../Components/ScrollBar";
 import PokemonCard from "../Components/PokemonCard";
